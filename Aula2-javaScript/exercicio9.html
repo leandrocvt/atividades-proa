@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicío - 9</title>
+</head>
+
+<body>
+    <script>
+
+        let n1 = parseInt(prompt("Informe o primeiro número: "));
+        let n2 = parseInt(prompt("Informe o segundo número: "));
+        let result = 0
+
+        let opc = parseInt(prompt("Selecione uma opção: 1.Adição 2.Subtração 3.Divisão 4.Multiplicação"));
+
+        switch (opc) {
+            case 1:
+                result = n1 + n2;
+                document.write("Resultado = " + result);
+                break;
+            case 2:
+                result = n1 - n2;
+                document.write("Resultado = " + result);
+                break;
+            case 3:
+                result = n1 / n2;
+                document.write("Resultado = " + result.toFixed(2));
+                break;
+            case 4:
+                result = n1 * n2;
+                document.write("Resultado = " + result);
+                break;
+            default:
+                document.write("Você selecionou uma opção inválida!")    
+        }
+
+    </script>
+</body>
+
+</html>

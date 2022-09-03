@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicío - 7</title>
+</head>
+<body>
+    <script>
+
+        let quantidade = parseInt(prompt("Informe a quantidade de maças : "));
+        let total = 0;
+
+        if(quantidade < 12){
+            total = quantidade * 3.50;
+        }else{
+            total = quantidade * 2.50;
+        }
+
+        document.write("Valor total: R$ ", total.toFixed(2));
+
+    </script>
+</body>
+</html>
