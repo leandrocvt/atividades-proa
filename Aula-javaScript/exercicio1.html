@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <h1>Qual o maior número informado?</h1>
+
+    <script>
+        let n1 = parseFloat(prompt("Informe o 1º número: "));
+        let n2 = parseFloat(prompt("Informe o 2º número: "));
+
+        if(n1 > n2){
+            document.write("O 1º número é o maior: ", n1);
+        }else if(n1 == n2){
+            document.write("Os número informados são iguais!");
+        }
+        else{
+            document.write("O 2º número é o maior: ", n2);
+        }
+    </script>
+</body>
+</html>

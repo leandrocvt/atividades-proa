@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+</head>
+
+<body>
+
+    <script>
+
+        let lados = parseInt(prompt("Informe quantos lado do polígono regular: "));
+
+        if(lados < 3){
+            document.write("NÃO É UM POLÍGONO!");
+        }else if(lados > 5){
+            document.write("POLÍGONO NÃO IDENTIFICADO");
+        }else{
+            let medida = parseInt(prompt("Informe a medida: "));
+            if(lados == 3){
+                document.write("TRIÂNGULO");
+                let perimetro = medida * 3;
+                document.write("<br>PERIMETRO: " + perimetro + "cm");
+            }else if(lados == 4){
+                document.write("QUADRADO");
+                let perimetro = medida * 4;
+                document.write("<br>PERIMETRO: " + perimetro + "cm");
+            }else{
+                document.write("PENTÁGONO")
+                let perimetro = medida * 5;
+                document.write("<br>PERIMETRO: " + perimetro + "cm");
+            }
+        }
+        
+    </script>
+</body>
+
+</html>
