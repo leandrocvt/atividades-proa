@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+
+<body>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        body input{
+            padding: 10px;
+            color: #fff;
+            background-color: blueviolet;
+            border: none;
+        }
+    </style>
+    <input type="button" value="Números Impares de 1 a 100!" onclick="NumerosImpares()">
+
+    <script>
+        
+        function NumerosImpares(){
+            for(let i=10; i<=100; i++){
+                if(i % 2 == 1){
+                    document.write(i + "<br>")
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

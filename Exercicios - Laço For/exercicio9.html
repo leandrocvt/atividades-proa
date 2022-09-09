@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fatorial com for</title>
+</head>
+<style>
+    body{
+        background-color: rgb(111, 153, 167);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+    h2{
+        color: rgb(0, 0, 0);
+    }
+    
+</style>
+<body>
+    <h2>fibonacci com o laço For</h2>
+    <script>
+        let anterior = 0;
+        let proximo = 1;
+        let soma = proximo;
+        
+        for(let i=0;i<=500;i++){
+            document.write(soma+"<br>");
+
+            soma = anterior + proximo;
+            anterior = proximo;
+            proximo = soma;
+        }
+    </script>
+</body>
+</html>

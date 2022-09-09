@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <style>
+        body{
+            text-align: center;
+            background-color: blueviolet;
+            color: #fff;
+        }
+
+        hr{
+            width: 100px;
+            color: #fff;
+        }
+    </style>
+    <h1>Tabuda</h1>
+    <script>
+
+        let n = parseInt(prompt("Informe um número: "))
+
+        for(let i=0; i<=10; i++){
+            let result = n * i;
+            document.write("<hr>" + n + " X " + i + " = " + result + "<br>");
+        }
+
+    </script>
+</body>
+</html>

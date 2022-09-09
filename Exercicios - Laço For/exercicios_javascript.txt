@@ -1,0 +1,24 @@
+Lista de Exercícios de Javascript
+
+1- Faça um programa em JavaScript em que o usuário clicará com o mouse sobre um botão e em seguida uma mensagem de alerta será apresentada com uma mensagem qualquer.
+
+2- Faça um programa JavaScript que receba 3 números informados pelo usuário e em seguida apresente uma mensagem de alerta informando qual é o maior número dentre os números informados.
+
+3- Faça um programa JavaScript em que o usuário informará a sua idade e o programa emitirá uma mensagem dizendo se o usuário e ou não menor de idade.
+
+4- Se listarmos todos os números naturais abaixo de 50 que são múltiplos de 3.
+
+5- Exibir todos os números de 1 à 100.
+
+6- Exibir todos os números pares de 1 à 100.
+
+7- Exibir a tabuada de qualquer número usando o for.
+
+8- Calcular o Fatorial de um número.
+
+9- Cada novo termo na seqüência de Fibonacci é gerado adicionando os dois termos anteriores. Exiba a sequencia Fibonacci, dos números menores do que 500.
+
+10- Criar uma função, que seja acionada por um botão, exibam todos os números ímpares, de 10 até 100.
+
+
+
