@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8</title>
+</head>
+
+<body style="text-align: center;">
+    <script>
+        let salario = parseFloat(prompt("Informe seu salário: "));
+
+        let novoSalario = salario;
+        let percentual;
+
+        if (novoSalario > 0) {
+            if (novoSalario <= 280.0) {
+                novoSalario *= 1.20;
+                percentual = '20%';
+            } else if (novoSalario < 700.0) {
+                novoSalario *= 1.15;
+                percentual = '15%';
+            } else if (novoSalario < 1500.0) {
+                novoSalario *= 1.10;
+                percentual = '10%';
+            } else if (novoSalario >= 1500.0) {
+                novoSalario *= 1.05;
+                percentual = '5%';
+            }
+            document.write("Salario anterior: " + salario.toFixed(2) + "\<br>"
+                + "Percentual aplicado: " + percentual + "\<br>"
+                + "Salario atual: " + novoSalario.toFixed(2));
+        } else {
+            document.write("Valor informado Inválido!")
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9</title>
+</head>
+
+<body>
+    <h1>Folha de Pagamento</h1>
+    <script>
+        let ValorHora = parseFloat(prompt("Informe o valor por hora: "));
+        let HorasTrabalhadas = parseFloat(prompt("Informe a quantidade de horas trabalhadas: "));
+
+        let SalarioBruto = ValorHora * HorasTrabalhadas;
+        let IR, INSS, FGTS, TotalDescosntos;
+
+        if (ValorHora > 0 && HorasTrabalhadas > 0) {
+            if (SalarioBruto > 900.0 && SalarioBruto <= 1500.0) {
+                descontoIR = "5%";
+                IR = SalarioBruto * 0.05;
+
+            } else if (SalarioBruto > 1500.0 && SalarioBruto <= 2500.0) {
+                descontoIR = "10%";
+                IR = SalarioBruto * 0.10;
+            } else if (SalarioBruto > 2500.0) {
+                descontoIR = "20%";
+                IR = SalarioBruto * 0.20;
+            }else{
+                descontoIR = "0";
+                IR = 0;
+            }
+
+            INSS = SalarioBruto * 0.10;
+            FGTS = SalarioBruto * 0.11;
+            TotalDescosntos = IR + INSS;
+            SalarioLiquido = SalarioBruto - TotalDescosntos;
+
+            document.write("Salário Bruto: (" + ValorHora + " * " + HorasTrabalhadas + "): R$ " + SalarioBruto.toFixed(2));
+            document.write("<br>(-) IR (" + descontoIR + "): R$ " + IR.toFixed(2));
+            document.write("<br>(-) INSS (10%): R$ " + INSS.toFixed(2));
+            document.write("<br>(-) FGTS (11%): R$ " + FGTS.toFixed(2));
+            document.write("<br>Total de descontos: R$ " + TotalDescosntos.toFixed(2));
+            document.write("<br>Salário Líquido: R$ " + SalarioLiquido.toFixed(2));
+        }
+        else {
+            document.write("Valor incorreto!")
+        }
+
+    </script>
+</body>
+
+</html>

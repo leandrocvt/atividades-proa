@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+</head>
+
+<body>
+    <script>
+
+        let num1 = parseFloat(prompt("Insira o primeiro valor: "));
+        let num2 = parseFloat(prompt("Insira um segundo valor: "));
+        let num3 = parseFloat(prompt("Insira o terceiro valor: "));
+
+        var aux = num1;
+
+        if (num2 > num1) {
+            aux = num2;
+            num2 = num1;
+            num1 = aux;
+        }
+
+        if (num3 > num1) {
+            aux = num3;
+            num3 = num1;
+            num1 = aux;
+        }
+
+        if (num3 > num2) {
+            aux = num3;
+            num3 = num2;
+            num2 = aux;
+        }
+
+        document.write(num1 + "-" + num2 + "-" + num3);
+    </script>
+</body>
+
+</html>
